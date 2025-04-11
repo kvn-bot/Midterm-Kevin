@@ -1,0 +1,155 @@
+/* Global styling */
+body.dark-theme {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background for the page */
+    color: white;  /* Light text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+/* Heading styling */
+h1, h2 {
+    color: #f8f9fa; /* Light color for headings */
+}
+
+/* Product grid layout */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Product card styling */
+.product-card {
+    background-color: #333; /* Dark background for cards */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Product image */
+.product-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Product info section */
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Product name and price styling */
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+a.btn {
+    background-color: #ffffff00 !important;  /* White background for the buttons */
+    color: #ffffff !important;  /* Dark text color */
+    border: 2px solid #f2f2f2 !important;  /* Dark border */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+}
+
+/* Button hover effect */
+a.btn:hover {
+    background-color: #fffefe !important;  /* Grey background on hover */
+    color: #000000 !important;  /* White text on hover */
+}
+
+/* Responsive design adjustments for smaller screens */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Product detail image size */
+.product-detail-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+/* Description and price styling */
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f8f9fa;
+}
+
+.description {
+    font-size: 16px;
+    color: #bbb;
+}
+
+/* Custom Navbar Styles */
+.custom-navbar {
+    background-color: #333;  /* Dark navbar background */
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.custom-navbar .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.custom-navbar .navbar-nav .nav-item .nav-link {
+    color: #f1c40f; /* Light text for navbar links */
+    font-size: 1.1rem;
+    margin: 0 13px;
+    padding: 8px 13px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for nav links */
+.custom-navbar .navbar-nav .nav-item .nav-link:hover {
+    background-color: #f1f1f1;  /* Light background on hover */
+    color: #333;  /* Dark text on hover */
+    border-radius: 5px;
+}
+
+/* Responsive navbar toggle button */
+.custom-navbar .navbar-toggler {
+    border-color: #fff;
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-color: #fff;  /* Light color for navbar toggle icon */
+}
+
